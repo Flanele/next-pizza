@@ -33,6 +33,7 @@ export { AddressInput } from './address-input';
 export { ProfileButton } from './profile-button';
 export { InfoBlock } from './info-block';
 export { ProfileForm } from './profile-form';
+export { Stories } from './stories';
 
 export * from './form-components';
 export * from './modals';
