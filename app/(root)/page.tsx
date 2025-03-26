@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { findPizzas } from "@/shared/lib";
 import { GetSearchParams } from "@/shared/lib/find-pizzas";
 
-export default async function Home({ searchParams }: { searchParams: GetSearchParams }) {
+export default async function Home({ searchParams }: { searchParams: Promise<GetSearchParams> }) {
   const params = await searchParams;
 
   const categories = await findPizzas(params);
