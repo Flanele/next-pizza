@@ -22,7 +22,7 @@ export async function createPayment(details: Props) {
       },
       confirmation: {
         type: 'redirect',
-        return_url: 'http://localhost:3000/?paid',
+        return_url: `https://${process.env.VERCEL_URL || 'localhost:3000'}/?paid`,
       },
     },
     {
